@@ -1,3 +1,6 @@
+import Account from "@/components/Account";
+import AbiEncodeDecode from "@/components/abiEncodeDecode";
+import ContractTest from "@/components/contractTest";
 import ReadOnlyProviderDemo from "@/components/etherProvider";
 import SendEther from "@/components/etherjs";
 import ReadSmartContract from "@/components/smartContract";
@@ -6,14 +9,17 @@ export default function Home() {
   return (
     <div>
       {/* <HomePage/> */}
-      <SendEther/>
+      {/* <SendEther/> */}
 
-      <WalletInfo/>
+      {/* <WalletInfo/> */}
 
-      <ReadSmartContract/>
+      {/* <ReadSmartContract/> */}
 
-      <ReadOnlyProviderDemo/>
+      {/* <ReadOnlyProviderDemo/> */}
 
+      <AbiEncodeDecode/>
+      <Account/>
+      <ContractTest/>
     </div>
   );
 }
